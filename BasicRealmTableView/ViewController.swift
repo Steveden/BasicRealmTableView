@@ -23,7 +23,7 @@ class ViewController: UIViewController, UITableViewDelegate {
         
         tableViewC.delegate = self   //  need UITableViewDelegate
         
-//                tableViewC.dataSource = self
+                tableViewC.dataSource = self
 //                tableViewC.separatorStyle = .none
 //        tableViewC.register(UINib(nibName: "MessageCellYY", bundle: nil), forCellReuseIdentifier: "Reusedent")
         
@@ -55,6 +55,7 @@ extension ViewController: UITableViewDataSource {
         
         let cell = tableViewC.dequeueReusableCell(withIdentifier: "Reusedent", for: indexPath)
 //        cell.textlabel?.text = "This is a cell"
+        cell.textLabel?.text = "This is a cell"
         print("At 319")
         
         
