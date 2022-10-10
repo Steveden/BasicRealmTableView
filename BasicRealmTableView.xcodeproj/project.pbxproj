@@ -13,9 +13,14 @@
 		A251236C28F45A43006D5919 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A251236A28F45A43006D5919 /* Main.storyboard */; };
 		A251236E28F45A45006D5919 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A251236D28F45A45006D5919 /* Assets.xcassets */; };
 		A251237128F45A45006D5919 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A251236F28F45A45006D5919 /* LaunchScreen.storyboard */; };
+		A251237928F462D1006D5919 /* CarsDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = A251237828F462D1006D5919 /* CarsDB.swift */; };
+		F87648F9EFBDDD623F8D12DA /* Pods_BasicRealmTableView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23CC675091EB05AD5D1E9BA5 /* Pods_BasicRealmTableView.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		20A53499F99408B40D12349E /* Pods-BasicRealmTableView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicRealmTableView.debug.xcconfig"; path = "Target Support Files/Pods-BasicRealmTableView/Pods-BasicRealmTableView.debug.xcconfig"; sourceTree = "<group>"; };
+		23CC675091EB05AD5D1E9BA5 /* Pods_BasicRealmTableView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BasicRealmTableView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E4DE94779F2D30C798AC05E /* Pods-BasicRealmTableView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicRealmTableView.release.xcconfig"; path = "Target Support Files/Pods-BasicRealmTableView/Pods-BasicRealmTableView.release.xcconfig"; sourceTree = "<group>"; };
 		A251236128F45A43006D5919 /* BasicRealmTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasicRealmTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A251236428F45A43006D5919 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A251236628F45A43006D5919 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,7 @@
 		A251236D28F45A45006D5919 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A251237028F45A45006D5919 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A251237228F45A45006D5919 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A251237828F462D1006D5919 /* CarsDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsDB.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F87648F9EFBDDD623F8D12DA /* Pods_BasicRealmTableView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		197C1850031C6966782EF588 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				20A53499F99408B40D12349E /* Pods-BasicRealmTableView.debug.xcconfig */,
+				7E4DE94779F2D30C798AC05E /* Pods-BasicRealmTableView.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		4A34B6020F1E427D9DA78400 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				23CC675091EB05AD5D1E9BA5 /* Pods_BasicRealmTableView.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A251235828F45A43006D5919 = {
 			isa = PBXGroup;
 			children = (
 				A251236328F45A43006D5919 /* BasicRealmTableView */,
 				A251236228F45A43006D5919 /* Products */,
+				197C1850031C6966782EF588 /* Pods */,
+				4A34B6020F1E427D9DA78400 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +89,7 @@
 				A251236D28F45A45006D5919 /* Assets.xcassets */,
 				A251236F28F45A45006D5919 /* LaunchScreen.storyboard */,
 				A251237228F45A45006D5919 /* Info.plist */,
+				A251237828F462D1006D5919 /* CarsDB.swift */,
 			);
 			path = BasicRealmTableView;
 			sourceTree = "<group>";
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A251237528F45A45006D5919 /* Build configuration list for PBXNativeTarget "BasicRealmTableView" */;
 			buildPhases = (
+				7919561940BF674408FE9FD8 /* [CP] Check Pods Manifest.lock */,
 				A251235D28F45A43006D5919 /* Sources */,
 				A251235E28F45A43006D5919 /* Frameworks */,
 				A251235F28F45A43006D5919 /* Resources */,
+				CEE7A36A2B3D3D992B4CF5A1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,6 +162,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7919561940BF674408FE9FD8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BasicRealmTableView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CEE7A36A2B3D3D992B4CF5A1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BasicRealmTableView/Pods-BasicRealmTableView-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BasicRealmTableView/Pods-BasicRealmTableView-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BasicRealmTableView/Pods-BasicRealmTableView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A251235D28F45A43006D5919 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -140,6 +211,7 @@
 			files = (
 				A251236928F45A43006D5919 /* ViewController.swift in Sources */,
 				A251236528F45A43006D5919 /* AppDelegate.swift in Sources */,
+				A251237928F462D1006D5919 /* CarsDB.swift in Sources */,
 				A251236728F45A43006D5919 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -216,7 +288,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +342,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -282,6 +354,7 @@
 		};
 		A251237628F45A45006D5919 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20A53499F99408B40D12349E /* Pods-BasicRealmTableView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -295,6 +368,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,6 +384,7 @@
 		};
 		A251237728F45A45006D5919 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E4DE94779F2D30C798AC05E /* Pods-BasicRealmTableView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -323,6 +398,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
